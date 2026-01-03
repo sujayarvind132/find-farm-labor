@@ -1,0 +1,69 @@
+name: farm_labor_finder
+description: Farm Labor Resource Finder - Connect farmers with laborers
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.0.0
+  
+  # Local Database
+  sqflite: ^2.2.8+4
+  path: ^1.8.3
+  
+  # Networking
+  http: ^1.1.0
+  
+  # Location Services
+  geolocator: ^9.0.2
+  google_maps_flutter: ^2.5.0
+  
+  # Firebase (optional - can be added later)
+  firebase_core: ^2.24.0
+  firebase_auth: ^4.15.0
+  cloud_firestore: ^4.14.0
+  firebase_messaging: ^14.6.0
+  
+  # UI & UX
+  google_fonts: ^6.1.0
+  intl: ^0.19.0
+  
+  # Phone Authentication
+  pin_code_fields: ^7.4.0
+  
+  # Image Handling
+  image_picker: ^1.0.0
+  cached_network_image: ^3.3.0
+  
+  # Local Notifications
+  flutter_local_notifications: ^16.3.0
+  
+  # Logging
+  logger: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+  
+  fonts:
+    - family: CustomFont
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
